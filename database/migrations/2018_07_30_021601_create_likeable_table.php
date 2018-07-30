@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
@@ -13,10 +12,14 @@ class CreateLikeableTable extends Migration
      */
     public function up()
     {
-        Schema::create('likeable', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+                Schema::create('likeable', function(Blueprint $table) {
+		$table->increments('id');
+		$table->integer('user_id');
+		$table->integer('likeable_id');
+		$table->string('likeable_type');
+		$table->timestamps();
+
+	});
     }
 
     /**
@@ -26,6 +29,7 @@ class CreateLikeableTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('likeable');
+              Schema::drop('likeable');
+
     }
 }
