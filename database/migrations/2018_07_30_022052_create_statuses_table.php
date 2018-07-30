@@ -16,11 +16,11 @@ class CreateStatusesTable extends Migration
 		$table->increments('id');
 		$table->integer('user_id');
 		$table->integer('parent_id')->nullable();
-        $table->text('title');
 		$table->text('body');
-        $table->text('slug');
-        $table->text('draft');
 		$table->timestamps();
+
+
+	
 	});
     }
 
