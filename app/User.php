@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\Access\Authorizable;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 
-class User extends Model implements AuthenticatableContract                                    
+class User implements AuthenticatableContract                                    
 {
     use Authenticatable;
 
@@ -185,4 +185,3 @@ class User extends Model implements AuthenticatableContract
     
     
 }
-
