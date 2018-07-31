@@ -215,3 +215,16 @@ Route::get('/slack', [
 	    'as' => 'slack.index',
     	'middleware' => ['guest'],
 ]);
+
+
+
+
+/*
+* Apps and current projects routes
+*/
+
+Route::get('/nuget', [
+	    'uses' => '\App\Http\Controllers\NugetController@getIndex',
+	    'as' => 'nuget.index',
+    	'middleware' => ['guest'],
+]);
