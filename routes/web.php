@@ -196,3 +196,22 @@ Route::get('/eFinance', [
 	    'as' => 'efinance.view',
 
 ]);
+
+
+
+
+
+
+
+
+
+/*
+* External Services
+*/
+
+
+Route::get('/slack', [
+	    'uses' => '\App\Http\Controllers\SlackController@getIndex',
+	    'as' => 'slack.index',
+    	'middleware' => ['guest'],
+]);
