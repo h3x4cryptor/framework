@@ -26,7 +26,7 @@ Route::middleware('api')->get('/admin', function (Request $request) {
     return $request->user();
 });
 
-    Route::group(['middleware' => ['auth:api']], function () {
+    Route::group(['middleware' => ['api']], function () {
         Route::get('/test', function (Request $request) {
              return response()->json(['name' => 'test']);
         });

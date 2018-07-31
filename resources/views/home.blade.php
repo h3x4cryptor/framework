@@ -1,7 +1,9 @@
 @extends('templates.default')
 
 @section('content')
-             
+
+
+
               <br />
 <span class="lead"><h3>March 8<sup>th</sup>, 2018</h3></span>
 <div class="container">
@@ -58,5 +60,3 @@ PHP training and code examples are lisetd in bellow div <code>.page-parts</code>
 <footer>&copy; 2018 e-Complex</footer></pre></pre>
 
 @stop
-
-
