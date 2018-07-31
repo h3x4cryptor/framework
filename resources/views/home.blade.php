@@ -3,7 +3,6 @@
 @section('content')
 
 
-
               <br />
 <span class="lead"><h3>March 8<sup>th</sup>, 2018</h3></span>
 <div class="container">

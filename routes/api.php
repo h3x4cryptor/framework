@@ -131,7 +131,7 @@ Route::get('user/profile', [
 
 // Slack integration service
 
-Route::get('/slack', [
+Route::post('/slack', [
     'as' => '0x01.index', 'uses' => 'SlackController@slackIndex'
 ]);
 
